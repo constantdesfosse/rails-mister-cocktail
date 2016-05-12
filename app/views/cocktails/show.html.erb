@@ -2,7 +2,7 @@
   <div class="banner-show" style="background-image: url('<%= @cocktail.image.url() %>')"></div>
   <h1><%= @cocktail.name %></h1>
   <% @cocktail.doses.each do |dose| %>
-    <div class="card">
+    <div class="card-rate">
      <%= link_to cocktail_dose_path(@cocktail, dose), method: :delete do %>
     <i class="fa fa-times" aria-hidden="true"></i>
     <%end%>
