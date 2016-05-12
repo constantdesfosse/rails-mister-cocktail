@@ -5,5 +5,5 @@ class Dose < ActiveRecord::Base
   validates :description, presence: true
   validates :cocktail, presence: true
   validates :ingredient, presence: true
-  validates :cocktail, uniqueness: { scope: :ingredient }
+  validates :cocktail, uniqueness: { scope: :ingredient, message: "Cocktail or Ingredient already taken" }
 end
