@@ -1,0 +1,125 @@
+.container {
+  height: 100%;
+  width: 60%;
+  background-color: #FBFBFB;
+  text-align: center;
+  margin: auto;
+}
+
+.card {
+  display: inline-block;
+  position: relative;
+  margin: auto;
+  margin-top: 0px;
+  border-radius: 5px;
+  background-color: #FFF;
+  border: solid 0.5px #E6E6E6 ;
+  padding: 0px;
+  margin-bottom: 5px;
+  height: 200px;
+  width: 350px;
+  transition: 0.5s;
+}
+
+.card-rate {
+  display: inline-block;
+  position: relative;
+  margin: auto;
+  margin-top: 0px;
+  border-radius: 5px;
+  background-color: #FFF;
+  border: solid 0.5px #E6E6E6 ;
+  padding: 0px;
+  margin-bottom: 5px;
+  width: 350px;
+  transition: 0.5s;
+}
+
+.card a {
+color: #00A890;
+font-size: 18px;
+margin-top: 0px;
+margin-bottom: 10px;
+text-decoration: none;
+}
+
+.card h3 {
+margin-top: 0px;
+margin-bottom: 10px;
+}
+
+.fa-star.empty {
+  color: #F6F6F6;
+}
+
+.fa-times {
+  color: #D5D5D5;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 12px;
+}
+
+.fa-times:hover {
+  color: #F0362E;
+}
+
+.fa-star {
+  color: #00AB92;
+}
+
+h1 {
+  color: #00AB92;
+}
+
+.btn-primary {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+
+.banner-card {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-card {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: white;
+  height: 35px;
+}
+
+.banner-show {
+  width: 100%;
+  height: 35%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+// <%= image_tag @restaurant.image.url() %>
+
+
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
