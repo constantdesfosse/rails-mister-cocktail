@@ -14,7 +14,7 @@
     <%= link_to cocktail_path(r), method: :delete do %>
     <i class="fa fa-times" aria-hidden="true"></i>
     <%end%>
-    <div class="banner-card" style="background-image: url('<%= r.image.url() %>')">
+    <div class="banner-card" style="background-image: url('<%= image_path r.photo, height: 300, width: 400, crop: :fill %>')">
     <div class="header-card">
     <h3><%= link_to r.name.upcase, cocktail_path(r) %></h3>
     </div>

@@ -1,5 +1,8 @@
 <div class="container">
-  <div class="banner-show" style="background-image: url('<%= @cocktail.image.url() %>')"></div>
+
+  <div class="banner-show" style="background-image: url('<%= image_path @cocktail.photo, height: 300, width: 400, crop: :fill %>')">
+  </div>
+
   <h1><%= @cocktail.name %></h1>
   <% @cocktail.doses.each do |dose| %>
     <div class="card-rate">

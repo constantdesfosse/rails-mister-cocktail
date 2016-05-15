@@ -1,9 +1,10 @@
 <div class="container">
 <h1>New Cocktail</h1>
-<%= simple_form_for (@cocktail), html: { multipart: true } do |f| %>
+<%= simple_form_for (@cocktail) do |f| %>
   <%= f.error_notification %>
   <%= f.input :name %>
-  <%= f.file_field :image, :label => "Upload an image" %>
+  <%= f.input :photo %>
+  <%= f.input :photo_cache, as: :hidden %>
   <%= f.button :submit %>
 <% end %>
 <%= link_to "Return at list", cocktails_path, class: "btn btn-primary" %>
